@@ -10,14 +10,21 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide&amp;display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Baumans&amp;display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bruno+Ace&amp;display=swap">
-    <link rel="stylesheet" href="assets/css/animate.min.css">
     <link rel="stylesheet" href="assets/css/Features-Image-images.css">
     <link rel="stylesheet" href="assets/css/Navbar-Centered-Brand-Dark-icons.css">
     <link rel="stylesheet" href="assets/css/styles.css">
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 
-<body style="background: var(--bs-emphasis-color);">
+<body>
+    <nav class="navbar navbar-expand-lg sticky-top bg-primary navbar-light" style="margin-bottom: 10px;box-shadow: 0px 10px 17px;" data-pgc="Encabezado">
+        <div class="container-fluid">
+            <div class="d-md-flex justify-content-start justify-content-md-center align-items-md-center align-items-xxl-center class=&quot;align-items-xl-center container-fluid justify-content-xl-center&quot;" style="font-family: 'Bruno Ace', serif;"><button class="btn btn-primary border-2 border-dark border" type="button" data-bs-toggle="offcanvas" data-bs-target="#MenuLateral" aria-controls="offcanvasWithBothOptions" style="margin-right:11px;width:42px;padding:2px;padding-right:2px;padding-left:2px;"><span class="navbar-toggler-icon"></span></button>
+                <p style="margin-bottom: 0px;color: var(--bs-body-bg);"><strong>Álgebra lineal aplicada:&nbsp;</strong></p>
+                <p style="margin-bottom: 0px;color: var(--bs-emphasis-color);"><strong>Sistemas de ecuaciones</strong></p>
+            </div>
+        </div>
+    </nav>
     <div class="offcanvas offcanvas-start text-bg-primary" tabindex="-1" data-bs-scroll="true" id="MenuLateral" aria-labelledby="offcanvasWithBothOptionsLabel" data-pgc="MenuLateral" style="width: 600px;">
         <div class="offcanvas-header">
             <h3 id="offcanvasWithBothOptionsLabel" class="offcanvas-title" style="font-family:Aldrich, sans-serif;height:15px;">Menú</h3><button class="btn-close" type="button" aria-label="Close" data-bs-dismiss="offcanvas"></button>
@@ -28,11 +35,12 @@
             <div class="list-group" style="padding-bottom: 10px;"></div>
         </div>
     </div>
-    <div class="container d-flex flex-column align-items-center" style="padding:20px;">
-        <div class="d-flex flex-column align-items-center container">
-            <div class="container d-flex flex-row justify-content-evenly flex-wrap rounded rounded-1" style="padding-top: 6px;padding-bottom: 12px;"><button class="flash animated infinite" data-bs-toggle="offcanvas" data-bs-target="#MenuLateral" aria-controls="offcanvasWithBothOptions" style="font-family: 'Baumans', sans-serif;font-size: 18px;padding: 0.5em 1.5em;--glow-color: rgb(217, 176, 255);--glow-spread-color: rgba(191, 123, 255, 0.781);--enhanced-glow-color: rgb(231, 206, 255);--btn-color: rgb(100, 61, 136);border: .25em solid var(--glow-color);color: var(--glow-color);font-weight: bold;background-color: var(--btn-color);border-radius: 1em;outline: none;box-shadow: 0 0 1em .25em var(--glow-color), 0 0 4em 1em var(--glow-spread-color), inset 0 0 .75em .25em var(--glow-color);text-shadow: 0 0 .5em var(--glow-color);position: relative;transition: all 0.3s;height: 50px;" data-pg-ia="{&quot;l&quot;:[{&quot;trg&quot;:&quot;timer&quot;,&quot;a&quot;:&quot;heartBeat&quot;}]}">MENÚ</button></div><img class="img-fluid" data-bss-hover-animate="rubberBand" src="assets/img/Algebra%20lineal%20aplicada.webp" style="max-width: 70%;">
-            <h2 class="text-white" style="font-family: Baumans, serif;margin-top: 15px;width: 600px;text-align: center;">Diseñado por:&nbsp;<span style="color: rgba(var(--bs-white-rgb),var(--bs-text-opacity));">Miguel A. Rodríguez Castro</span></h2>
-        </div>
+    <div class="container" style="border-width: 2px;border-style: solid;">
+        <p style="text-align: justify;padding: 15px;">Para <strong>sistemas cuadrados</strong> (los que tienen el mismo número de ecuaciones que de variables), puede utilizar el siguiente teorema para determinar cuál de los sistemas tiene una solución única.</p>
+        <p style="text-align: justify;padding: 15px;background: var(--bs-teal);border-radius: 17px;border-color: var(--bs-teal);"><span class="d-flex" style="font-weight: bold;border: 6px none var(--bs-teal);color: #ab00d6;font-family: Aldrich, sans-serif;" data-pgc="Cabecera 1" data-pgc-field="Contenido">TEOREMA 2.11&nbsp;Sistemas de ecuaciones con una solución única</span>Si <strong>A</strong> es una matriz invertible, entonces el sistema de ecuaciones lineales \(Ax = b\) tiene una solución única dada por \(x = A^{-1} b\).</p>
+        <p style="text-align: justify;padding: 15px;">Puesto que <strong>A</strong> no es singular, los siguientes pasos son válidos.<br><br>\(Ax = b\)<br>\(A^{-1}Ax&nbsp;=A^{-1}b\)<br>\(Ix&nbsp;= A^{-1}b\)<br>\(x&nbsp;= A^{-1}b\)<br><br>Esta solución es única, ya que si \(x_1\) y \(x_2\) son dos soluciones, usted podría aplicar la propiedad de cancelación para la ecuación \(Ax_1 = b = Ax_2\) para concluir que \(x_1 = x_2\).<br><br>Reemplazar lo resaltado por <strong>Un uso del Teorema 2.11</strong> es resolviendo varios sistemas en los cuales todos tienen la misma matriz de coeficientes <strong>A</strong>. En este caso usted debe encontrar la matriz inversa y luego resolver cada sistema calculando el producto \(A^{^{-1}}b\).</p>
+        <p style="text-align: justify;padding: 20px;background: #a6e4ff;"><strong><span style="color: rgb(255, 0, 0);">Ejemplo.</span></strong>&nbsp;<strong>Solución de un sistema de ecuaciones utilizando una matriz inversa</strong><br>Utilice una matriz inversa para resolver cada sistema.<br><br><strong>a.</strong>&nbsp; &nbsp;\(\begin{array}{cc} 2x + 3y + z = -1\\ 3x + 3y + z = 1 \\ 2x + 4y + z = -2\end{array}\)&nbsp; &nbsp; &nbsp;<strong>b.</strong>&nbsp; &nbsp; &nbsp;\(\begin{array}{cc} 2x + 3y + z = 4 \\ 3x + 3y + z = 81 \\ 2x + 4y + z = 5\end{array}\)&nbsp; &nbsp; &nbsp; <strong>c.</strong>&nbsp; &nbsp; &nbsp;\(\begin{array}{cc} 2x + 3y + z = 0\\ 3x + 3y + z = 0 \\ 2x + 4y + z = 0\end{array}\)<br><br><strong>Solución</strong><br>Primero observe que la matriz de coeficientes de cada sistema es<br><br>\(A = \left[\begin{array}{cc} 2 &amp; 3 &amp; 1 \\ 3 &amp; 3 &amp; 1 \\ 2 &amp; 4 &amp; 1 \end{array}\right]\)<br><br>Utilizando la eliminación de Gauss-Jordan encontrará que<br><br>\(A^{-1} = \left[\begin{array}{cc} -1 &amp; 1 &amp; 0 \\ -1 &amp; 0 &amp; 1 \\ 6 &amp; -2 &amp; -3 \end{array}\right]\)<br><br><strong>a.</strong> \(x=A^{-1}b=\left[\begin{array}{cc} -1 &amp; 1 &amp; 0 \\ -1 &amp; 0 &amp; 1 \\ 6 &amp; -2 &amp; -3 \end{array}\right]\left[\begin{array}{cc} -1 \\ 1 \\ -2 \end{array}\right] =\left[\begin{array}{cc} 2 \\ -1 \\ -2\end{array}\right]\)<br><br>La solución es \(x = 2\), \(y = -1\), y \(z=-2\).<br><br><strong>b.</strong>&nbsp;\(x=A^{-1}b=\left[\begin{array}{cc} -1 &amp; 1 &amp; 0 \\ -1 &amp; 0 &amp; 1 \\ 6 &amp; -2 &amp; -3 \end{array}\right]\left[\begin{array}{cc} 4 \\ 8 \\ 5 \end{array}\right] =\left[\begin{array}{cc} 4 \\ 1 \\ -7\end{array}\right]\)<br><br>La solución es \(x = 4\), \(y = 1\), y \(z=-7\).<br><br><strong>c.</strong>&nbsp;\(x=A^{-1}b=\left[\begin{array}{cc} -1 &amp; 1 &amp; 0 \\ -1 &amp; 0 &amp; 1 \\ 6 &amp; -2 &amp; -3 \end{array}\right]\left[\begin{array}{cc} 0 \\ 0 \\ 0 \end{array}\right] =\left[\begin{array}{cc} 0 \\ 0 \\ 0\end{array}\right]\)<br><br>La solución es trivial \(x = 0\), \(y =0\), y \(z=0\).</p>
+        <p class="text-center" style="text-align: justify;padding: 5px;background: var(--bs-primary);border: 7px double var(--bs-highlight-color);border-radius: 10px;"><strong><span style="color: rgb(8, 227, 4);">********** FIN DE PAGINA **********</span></strong></p>
     </div>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/bs-init.js"></script>
